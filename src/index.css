@@ -47,6 +47,10 @@ All colors MUST be HSL for proper theming.
     --success: 120 40% 50%;
     --success-foreground: 45 30% 98%;
 
+    /* Coral accent for highlights */
+    --coral: 6 80% 73%;
+    --coral-foreground: 45 30% 98%;
+
     /* Warm gradients */
     --gradient-warm: linear-gradient(135deg, hsl(85 25% 45%), hsl(30 35% 75%));
     --gradient-subtle: linear-gradient(180deg, hsl(45 25% 98%), hsl(40 20% 94%));

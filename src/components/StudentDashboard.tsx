@@ -12,12 +12,16 @@ import {
   LogOut,
   Target,
   Heart,
-  Lightbulb
+  Lightbulb,
+  X
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import ChatBot from "./ChatBot";
+import { useState } from "react";
 
 const StudentDashboard = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  
   const attendanceData = [
     { subject: "Mathematics", attendance: 92, grade: "A-" },
     { subject: "Science", attendance: 88, grade: "B+" },
@@ -233,11 +237,27 @@ const StudentDashboard = () => {
               </CardContent>
             </Card>
 
-            {/* AI Chatbot */}
-            <ChatBot />
           </div>
         </div>
       </div>
+
+      {/* Floating Chatbot Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <Button
+          onClick={() => setIsChatOpen(!isChatOpen)}
+          className="w-14 h-14 rounded-full bg-coral hover:bg-coral/90 text-coral-foreground shadow-warm"
+          size="lg"
+        >
+          {isChatOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}
+        </Button>
+      </div>
+
+      {/* Chatbot Modal */}
+      {isChatOpen && (
+        <div className="fixed bottom-24 right-6 z-40 w-96 h-96 animate-scale-in">
+          <ChatBot />
+        </div>
+      )}
     </div>
   );
 };
