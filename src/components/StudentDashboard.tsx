@@ -15,6 +15,7 @@ import {
   Lightbulb
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import ChatBot from "./ChatBot";
 
 const StudentDashboard = () => {
   const attendanceData = [
@@ -233,38 +234,7 @@ const StudentDashboard = () => {
             </Card>
 
             {/* AI Chatbot */}
-            <Card className="shadow-card">
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  AI Support Assistant
-                </CardTitle>
-                <CardDescription>Get instant help and guidance</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="p-4 rounded-lg bg-gradient-warm/10 border border-primary/20">
-                  <p className="text-sm text-foreground mb-2">
-                    <strong>AI Assistant:</strong> Hi Alex! I noticed you've been doing great in English. 
-                    Would you like some tips to improve your Math performance?
-                  </p>
-                  <div className="flex gap-2">
-                    <Button size="sm" variant="outline">Yes, help me</Button>
-                    <Button size="sm" variant="ghost">Maybe later</Button>
-                  </div>
-                </div>
-                
-                <Button className="w-full" variant="student">
-                  <MessageCircle className="w-4 h-4 mr-2" />
-                  Start New Conversation
-                </Button>
-                
-                <div className="text-center">
-                  <p className="text-xs text-muted-foreground">
-                    Available 24/7 • Confidential & Supportive
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+            <ChatBot />
           </div>
         </div>
       </div>

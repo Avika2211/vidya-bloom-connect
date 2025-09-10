@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Users, BarChart3, HeartHandshake } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-students.jpg";
+const heroImage = "/lovable-uploads/7bb9a39b-3e06-4024-9271-c5d6e618a802.png";
 
 const Home = () => {
   return (
