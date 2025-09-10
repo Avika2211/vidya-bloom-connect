@@ -2,41 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Vidyagrid Design System - Warm, earth-toned, supportive design
+All colors MUST be HSL for proper theming.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Earth-toned color palette */
+    --background: 45 20% 96%;
+    --foreground: 25 15% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 25% 98%;
+    --card-foreground: 25 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 25% 98%;
+    --popover-foreground: 25 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Soft sage green primary */
+    --primary: 85 25% 45%;
+    --primary-foreground: 45 30% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm cream secondary */
+    --secondary: 40 35% 92%;
+    --secondary-foreground: 25 20% 30%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted earth tones */
+    --muted: 40 20% 90%;
+    --muted-foreground: 25 15% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Warm brown accent */
+    --accent: 30 35% 75%;
+    --accent-foreground: 25 25% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Soft warning colors */
+    --destructive: 5 75% 65%;
+    --destructive-foreground: 45 30% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Subtle borders and inputs */
+    --border: 40 25% 85%;
+    --input: 40 30% 88%;
+    --ring: 85 25% 45%;
 
-    --radius: 0.5rem;
+    /* Success and growth colors */
+    --success: 120 40% 50%;
+    --success-foreground: 45 30% 98%;
+
+    /* Warm gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(85 25% 45%), hsl(30 35% 75%));
+    --gradient-subtle: linear-gradient(180deg, hsl(45 25% 98%), hsl(40 20% 94%));
+    --gradient-hero: linear-gradient(135deg, hsl(85 30% 50%), hsl(120 25% 45%));
+
+    /* Soft shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 15% 25% / 0.1);
+    --shadow-warm: 0 8px 30px -8px hsl(85 25% 45% / 0.15);
+    --shadow-card: 0 2px 15px -2px hsl(25 15% 25% / 0.08);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-gentle: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
