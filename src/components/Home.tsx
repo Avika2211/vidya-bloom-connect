@@ -15,7 +15,7 @@ const Home = () => {
               <Users className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-foreground">Vidyagrid</h1>
+              <h1 className="text-2xl font-bold text-foreground">VidyaGrid</h1>
               <p className="text-sm text-muted-foreground">Supporting Every Learner</p>
             </div>
           </div>
@@ -40,7 +40,7 @@ const Home = () => {
                 <span className="bg-gradient-hero bg-clip-text text-transparent"> Enabling Success</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Vidyagrid helps schools and students stay connected, track academic progress, 
+                VidyaGrid helps schools and students stay connected, track academic progress, 
                 and receive personalized counseling using AI-driven insights — for brighter 
                 futures and stronger communities.
               </p>
@@ -118,13 +118,13 @@ const Home = () => {
                 <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
                   <Users className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold text-foreground">Vidyagrid</span>
+                <span className="text-xl font-bold text-foreground">VidyaGrid</span>
               </div>
               <p className="text-muted-foreground mb-4">
                 Transforming education through compassionate AI and data-driven insights.
               </p>
               <p className="text-sm text-muted-foreground">
-                © 2024 Vidyagrid. All rights reserved.
+                © 2024 VidyaGrid. All rights reserved.
               </p>
             </div>
             
